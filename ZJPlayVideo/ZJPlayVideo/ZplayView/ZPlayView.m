@@ -6,7 +6,9 @@
 //  Copyright © 2017年 zj. All rights reserved.
 //
 
-#define HEIGHTSCANLE_BOTTOMVIEW 50/self.frame.size.height
+#define HEIGHTSCANLE_BOTTOMVIEW 50
+#define HEIGHTSCANLE_BOTTOMVIEW_SIX self.frame.size.height/6
+
 #define COLOR_CONRTOLVIEW [UIColor colorWithRed:0 green:0 blue:0 alpha:0.3]
 
 #import "ZPlayView.h"
@@ -113,7 +115,7 @@
 - (instancetype)initWithFrame:(CGRect)frame
 {
 
-    if (self ==[super initWithFrame:frame])
+    if (self = [super initWithFrame:frame])
     {
     
         self.oldFrame = self.frame;
@@ -125,11 +127,12 @@
                   isLive:(BOOL)isLive
 {
     self.backgroundColor = [UIColor blackColor];
-    [self removePlayer];
+    self.ZPlay?[self removePlayer]:nil;
     self.isLive  = isLive;
     self.currentPlayUrl = playurl;
-    [self setUpUI];
     [self orientationChanged];
+
+    [self setUpUI];
     
 
 }
@@ -140,7 +143,7 @@
     [self setUpIJKPlay];
     [self setUpVideoContorllerview];
     [self setUpVideoStateBack];
-    [self updateFrame];
+    [self updateFrameIsUpdata:NO];
 }
 - (void)setUpIJKPlay
 {
@@ -183,10 +186,6 @@
     self.videoControllView.delegate = self;
     [self addSubview:self.videoControllView];
     
-    //测试网速用的view todo
-   self.testlable = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 100, 100)];
-    self.testlable.textColor = [UIColor redColor];
-    [self.videoControllView addSubview:self.testlable];
 #pragma mark--------控制区域的UI-------------------
     self.bottomInteractionView = [[UIView alloc]initWithFrame:CGRectZero];
     self.bottomInteractionView.backgroundColor = COLOR_CONRTOLVIEW;
@@ -232,46 +231,64 @@
     
 }
 //更新frame
-- (void)updateFrame
+- (void)updateFrameIsUpdata:(BOOL)isUpdate
 {
-    [self.ZPlay.view mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.right.top.bottom.equalTo(self).offset(0);
-    }];;
-    [self.videoControllView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.right.top.bottom.equalTo(self).offset(0);
-    }];
-//底部-------todo
-    [self.bottomInteractionView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.right.bottom.equalTo(self.videoControllView).offset(0);
-        make.height.equalTo(@(self.frame.size.height*HEIGHTSCANLE_BOTTOMVIEW));
-    }];
-    
-    [self.sliderConrtoller mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.bottomInteractionView.mas_left).offset(0);
-        make.right.equalTo(self.bottomInteractionView.mas_right).offset(0);
-        make.top.bottom.equalTo(self.bottomInteractionView).offset(0);
+
+    if (isUpdate)
+    {
+        [self.bottomInteractionView mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.left.right.bottom.equalTo(self.videoControllView).offset(0);
+            make.height.equalTo(@(self.type==ZInterfaceOrientationUp?HEIGHTSCANLE_BOTTOMVIEW:HEIGHTSCANLE_BOTTOMVIEW_SIX));
+        }];
         
-    }];
-//上部-------
-    [self.topInteractionView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.right.top.equalTo(self).offset(0);
-        make.height.equalTo(@(self.frame.size.height*HEIGHTSCANLE_BOTTOMVIEW));
-    }];
-  
-//test
-    /*
-    [self.imagecurrentImage mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self).offset(0);
-        make.centerY.equalTo(self).offset(0);
-        make.height.equalTo(@100);
-        make.width.equalTo(@100);
-    }];
-    边上出来的东西例如清晰度
-    [self.clarityView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.mas_right).offset(0);
-        make.top.bottom.equalTo(self).offset(0);
-        make.width.equalTo(@70);
-    }];*/
+        [self.topInteractionView mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.left.right.top.equalTo(self).offset(0);
+            make.height.equalTo(@(self.type==ZInterfaceOrientationUp?HEIGHTSCANLE_BOTTOMVIEW:HEIGHTSCANLE_BOTTOMVIEW_SIX));
+        }];
+    }
+    else
+    {
+        [self.ZPlay.view mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.right.top.bottom.equalTo(self).offset(0);
+        }];;
+        [self.videoControllView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.right.top.bottom.equalTo(self).offset(0);
+        }];
+//底部-------todo
+        [self.bottomInteractionView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.right.bottom.equalTo(self.videoControllView).offset(0);
+         
+            make.height.equalTo(@(self.type==ZInterfaceOrientationUp?HEIGHTSCANLE_BOTTOMVIEW:HEIGHTSCANLE_BOTTOMVIEW_SIX));
+        }];
+        
+        [self.sliderConrtoller mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(self.bottomInteractionView.mas_left).offset(0);
+            make.right.equalTo(self.bottomInteractionView.mas_right).offset(0);
+            make.top.bottom.equalTo(self.bottomInteractionView).offset(0);
+            
+        }];
+        //上部-------
+        [self.topInteractionView mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.left.right.top.equalTo(self).offset(0);
+            make.height.equalTo(@(self.type==ZInterfaceOrientationUp?HEIGHTSCANLE_BOTTOMVIEW:HEIGHTSCANLE_BOTTOMVIEW_SIX));
+        }];
+        
+        //test
+        /*
+         [self.imagecurrentImage mas_makeConstraints:^(MASConstraintMaker *make) {
+         make.left.equalTo(self).offset(0);
+         make.centerY.equalTo(self).offset(0);
+         make.height.equalTo(@100);
+         make.width.equalTo(@100);
+         }];
+         边上出来的东西例如清晰度
+         [self.clarityView mas_makeConstraints:^(MASConstraintMaker *make) {
+         make.left.equalTo(self.mas_right).offset(0);
+         make.top.bottom.equalTo(self).offset(0);
+         make.width.equalTo(@70);
+         }];*/
+
+    }
 }
 
 #pragma mark ---------监听一些ijk播放时候的状态
@@ -309,7 +326,7 @@
     
 }
 
--(void)removeMovieNotificationObservers
+- (void)removeMovieNotificationObservers
 {
     [[NSNotificationCenter defaultCenter]removeObserver:self name:IJKMPMoviePlayerLoadStateDidChangeNotification object:nil];
     [[NSNotificationCenter defaultCenter]removeObserver:self name:IJKMPMoviePlayerPlaybackDidFinishNotification object:nil];
@@ -326,7 +343,7 @@
         case  UIDeviceOrientationPortrait:
             NSLog(@"home键在下");
             self.type = ZInterfaceOrientationUp;
-            self.frame = CGRectMake(0, 0, self.oldFrame.size.width,self.oldFrame.size.height);
+            self.frame = self.oldFrame;
             break;
             
         case  UIDeviceOrientationPortraitUpsideDown:
@@ -519,7 +536,8 @@
             playerFrame.size.width = [UIScreen mainScreen].bounds.size.width;
             playerFrame.size.height = [UIScreen mainScreen].bounds.size.height;
             self.frame = playerFrame;
-            [self updateFrame];
+            [self updateFrameIsUpdata:YES];
+           
         }];
         self.type = ZInterfaceOrientationLandscapeLeft;
     }
@@ -529,7 +547,7 @@
             NSNumber * value  = [NSNumber numberWithInt:UIInterfaceOrientationPortrait];
             [[UIDevice currentDevice] setValue:value forKey:@"orientation"];
             self.frame = self.oldFrame;
-            [self updateFrame];
+            [self updateFrameIsUpdata:YES];
             
         }];
         self.type = ZInterfaceOrientationUp;
