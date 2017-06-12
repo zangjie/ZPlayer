@@ -53,7 +53,7 @@
     
 self.playListArray = [NSArray arrayWithObjects:@"http://olijqxlq5.bkt.clouddn.com/base3.mp4",@"http://ips.ifeng.com/3gs.ifeng.com/userfiles/video02/2014/08/26/2220447-280-068-2354.mp4",@"http://baobab.wdjcdn.com/14463059939521445330477778425364388_x264.mp4",@"http://olijqxlq5.bkt.clouddn.com/base3.mp4",@"http://ips.ifeng.com/3gs.ifeng.com/userfiles/video02/2014/08/26/2220447-280-068-2354.mp4", nil];
     //添加视屏
-    self.playView = [[ZPlayView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 410)];
+    self.playView = [[ZPlayView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 210)];
     [self.playView startWithPlayUrl:self.playListArray[0] isLive:NO];
     self.playView.delegate = self;
     self.playView.dataSource = self;
