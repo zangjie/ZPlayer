@@ -50,6 +50,14 @@
 
     [self.view addSubview:buttonLive];
     
+    
+self.playListArray = [NSArray arrayWithObjects:@"http://olijqxlq5.bkt.clouddn.com/base3.mp4",@"http://ips.ifeng.com/3gs.ifeng.com/userfiles/video02/2014/08/26/2220447-280-068-2354.mp4",@"http://baobab.wdjcdn.com/14463059939521445330477778425364388_x264.mp4",@"http://olijqxlq5.bkt.clouddn.com/base3.mp4",@"http://ips.ifeng.com/3gs.ifeng.com/userfiles/video02/2014/08/26/2220447-280-068-2354.mp4", nil];
+    //添加视屏
+    self.playView = [[ZPlayView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 410)];
+    [self.playView startWithPlayUrl:self.playListArray[0] isLive:NO];
+    self.playView.delegate = self;
+    self.playView.dataSource = self;
+    [self.view addSubview:self.playView];
 }
 //测试切换用的
 -(void)buttonAction:(UIButton*)sender{
@@ -71,7 +79,7 @@
 //切换清晰度
 - (NSString *)changeClarity{
 
-    return @"http://ac-2hkfpDHJ.clouddn.com/63cbedb764828e197fb5.mp4";
+    return @"http://olijqxlq5.bkt.clouddn.com/%E5%BB%B6%E6%97%B6%E6%91%84%E5%BD%B1%EF%BC%9A%E5%90%88%E6%AC%A2%E5%B1%B1%E4%B8%8A%E7%9A%84%E4%BA%91%E4%B8%8E%E9%93%B6%E6%B2%B3_720p_%E7%88%B1%E7%BB%99%E7%BD%91_aigei_com.mp4";
 
 }
 //下一集回调

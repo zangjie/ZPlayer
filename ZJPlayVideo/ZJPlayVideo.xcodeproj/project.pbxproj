@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		38172D111EDFB9BA00903A5B /* ZPlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38172D101EDFB9BA00903A5B /* ZPlayView.m */; };
 		38172D161EDFC35900903A5B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38172D151EDFC35900903A5B /* AudioToolbox.framework */; };
 		38172D181EDFC36200903A5B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38172D171EDFC36200903A5B /* AVFoundation.framework */; };
 		38172D1A1EDFC37400903A5B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38172D191EDFC37400903A5B /* CoreGraphics.framework */; };
@@ -23,16 +22,16 @@
 		38172D2E1EDFDFEE00903A5B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38172D2D1EDFDFEE00903A5B /* UIKit.framework */; };
 		38172D301EDFE03500903A5B /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 38172D2F1EDFE03500903A5B /* libc++.tbd */; };
 		38172D331EDFE0E300903A5B /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 38172D311EDFE0CC00903A5B /* libz.tbd */; };
-		38172D361EDFF81C00903A5B /* ZSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38172D351EDFF81C00903A5B /* ZSliderView.m */; };
-		384189411EE99C3C00A062CE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 384189401EE99C3C00A062CE /* ViewController.m */; };
 		3841894B1EE99DDA00A062CE /* 1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 384189461EE99DDA00A062CE /* 1.jpeg */; };
 		3841894C1EE99DDA00A062CE /* 2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 384189471EE99DDA00A062CE /* 2.jpeg */; };
 		3841894D1EE99DDA00A062CE /* 3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 384189481EE99DDA00A062CE /* 3.jpeg */; };
 		3841894E1EE99DDA00A062CE /* 4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 384189491EE99DDA00A062CE /* 4.jpeg */; };
 		3841894F1EE99DDA00A062CE /* 5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3841894A1EE99DDA00A062CE /* 5.jpeg */; };
+		385544E01EEE2AD600D0F9DC /* ZPlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 385544D91EEE2AD600D0F9DC /* ZPlayView.m */; };
+		385544E11EEE2AD600D0F9DC /* ZSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 385544DB1EEE2AD600D0F9DC /* ZSlider.m */; };
+		385544E21EEE2AD600D0F9DC /* ZSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 385544DD1EEE2AD600D0F9DC /* ZSliderView.m */; };
+		385544E31EEE2AD600D0F9DC /* ZTouchMoveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 385544DF1EEE2AD600D0F9DC /* ZTouchMoveView.m */; };
 		38B475B81EE00853008FDBDB /* sliderImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38B475B71EE00853008FDBDB /* sliderImage@2x.png */; };
-		38B475D11EE4405E008FDBDB /* ZTouchMoveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B475D01EE4405E008FDBDB /* ZTouchMoveView.m */; };
-		38B475D41EE54812008FDBDB /* ZSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B475D31EE54812008FDBDB /* ZSlider.m */; };
 		38B475DB1EE55298008FDBDB /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 38B475D51EE55298008FDBDB /* pause.png */; };
 		38B475DC1EE55298008FDBDB /* pause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38B475D61EE55298008FDBDB /* pause@2x.png */; };
 		38B475DD1EE55298008FDBDB /* pause@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38B475D71EE55298008FDBDB /* pause@3x.png */; };
@@ -42,7 +41,7 @@
 		38CCE79C1EE6978B00CDE74F /* big.png in Resources */ = {isa = PBXBuildFile; fileRef = 38CCE7991EE6978B00CDE74F /* big.png */; };
 		38CCE79D1EE6978B00CDE74F /* big@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38CCE79A1EE6978B00CDE74F /* big@2x.png */; };
 		38CCE79E1EE6978B00CDE74F /* big@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38CCE79B1EE6978B00CDE74F /* big@3x.png */; };
-		38CCE7A21EE6DD5B00CDE74F /* testViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38CCE7A11EE6DD5B00CDE74F /* testViewController.m */; };
+		38CCE7A21EE6DD5B00CDE74F /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38CCE7A11EE6DD5B00CDE74F /* TestViewController.m */; };
 		38CCE7A91EE8411000CDE74F /* next.png in Resources */ = {isa = PBXBuildFile; fileRef = 38CCE7A61EE8411000CDE74F /* next.png */; };
 		38CCE7AA1EE8411000CDE74F /* next@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38CCE7A71EE8411000CDE74F /* next@2x.png */; };
 		38CCE7AB1EE8411000CDE74F /* next@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38CCE7A81EE8411000CDE74F /* next@3x.png */; };
@@ -75,8 +74,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		38172D0F1EDFB9BA00903A5B /* ZPlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPlayView.h; sourceTree = "<group>"; };
-		38172D101EDFB9BA00903A5B /* ZPlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPlayView.m; sourceTree = "<group>"; };
 		38172D151EDFC35900903A5B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		38172D171EDFC36200903A5B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		38172D191EDFC37400903A5B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -92,20 +89,20 @@
 		38172D2D1EDFDFEE00903A5B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		38172D2F1EDFE03500903A5B /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		38172D311EDFE0CC00903A5B /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		38172D341EDFF81C00903A5B /* ZSliderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSliderView.h; sourceTree = "<group>"; };
-		38172D351EDFF81C00903A5B /* ZSliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSliderView.m; sourceTree = "<group>"; };
-		3841893F1EE99C3C00A062CE /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		384189401EE99C3C00A062CE /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		384189461EE99DDA00A062CE /* 1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpeg; sourceTree = "<group>"; };
 		384189471EE99DDA00A062CE /* 2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpeg; sourceTree = "<group>"; };
 		384189481EE99DDA00A062CE /* 3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpeg; sourceTree = "<group>"; };
 		384189491EE99DDA00A062CE /* 4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpeg; sourceTree = "<group>"; };
 		3841894A1EE99DDA00A062CE /* 5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpeg; sourceTree = "<group>"; };
+		385544D81EEE2AD600D0F9DC /* ZPlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPlayView.h; sourceTree = "<group>"; };
+		385544D91EEE2AD600D0F9DC /* ZPlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPlayView.m; sourceTree = "<group>"; };
+		385544DA1EEE2AD600D0F9DC /* ZSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSlider.h; sourceTree = "<group>"; };
+		385544DB1EEE2AD600D0F9DC /* ZSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSlider.m; sourceTree = "<group>"; };
+		385544DC1EEE2AD600D0F9DC /* ZSliderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSliderView.h; sourceTree = "<group>"; };
+		385544DD1EEE2AD600D0F9DC /* ZSliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSliderView.m; sourceTree = "<group>"; };
+		385544DE1EEE2AD600D0F9DC /* ZTouchMoveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTouchMoveView.h; sourceTree = "<group>"; };
+		385544DF1EEE2AD600D0F9DC /* ZTouchMoveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTouchMoveView.m; sourceTree = "<group>"; };
 		38B475B71EE00853008FDBDB /* sliderImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sliderImage@2x.png"; sourceTree = "<group>"; };
-		38B475CF1EE4405E008FDBDB /* ZTouchMoveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTouchMoveView.h; sourceTree = "<group>"; };
-		38B475D01EE4405E008FDBDB /* ZTouchMoveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTouchMoveView.m; sourceTree = "<group>"; };
-		38B475D21EE54812008FDBDB /* ZSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSlider.h; sourceTree = "<group>"; };
-		38B475D31EE54812008FDBDB /* ZSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSlider.m; sourceTree = "<group>"; };
 		38B475D51EE55298008FDBDB /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
 		38B475D61EE55298008FDBDB /* pause@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pause@2x.png"; sourceTree = "<group>"; };
 		38B475D71EE55298008FDBDB /* pause@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pause@3x.png"; sourceTree = "<group>"; };
@@ -115,8 +112,8 @@
 		38CCE7991EE6978B00CDE74F /* big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = big.png; sourceTree = "<group>"; };
 		38CCE79A1EE6978B00CDE74F /* big@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "big@2x.png"; sourceTree = "<group>"; };
 		38CCE79B1EE6978B00CDE74F /* big@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "big@3x.png"; sourceTree = "<group>"; };
-		38CCE7A01EE6DD5B00CDE74F /* testViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testViewController.h; sourceTree = "<group>"; };
-		38CCE7A11EE6DD5B00CDE74F /* testViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testViewController.m; sourceTree = "<group>"; };
+		38CCE7A01EE6DD5B00CDE74F /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		38CCE7A11EE6DD5B00CDE74F /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		38CCE7A61EE8411000CDE74F /* next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = next.png; sourceTree = "<group>"; };
 		38CCE7A71EE8411000CDE74F /* next@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "next@2x.png"; sourceTree = "<group>"; };
 		38CCE7A81EE8411000CDE74F /* next@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "next@3x.png"; sourceTree = "<group>"; };
@@ -213,7 +210,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		384189451EE99DDA00A062CE /* tu */ = {
+		384189451EE99DDA00A062CE /* TestPic */ = {
 			isa = PBXGroup;
 			children = (
 				384189461EE99DDA00A062CE /* 1.jpeg */,
@@ -222,7 +219,23 @@
 				384189491EE99DDA00A062CE /* 4.jpeg */,
 				3841894A1EE99DDA00A062CE /* 5.jpeg */,
 			);
+			name = TestPic;
 			path = tu;
+			sourceTree = "<group>";
+		};
+		385544D71EEE2AD600D0F9DC /* ZplayView */ = {
+			isa = PBXGroup;
+			children = (
+				385544D81EEE2AD600D0F9DC /* ZPlayView.h */,
+				385544D91EEE2AD600D0F9DC /* ZPlayView.m */,
+				385544DA1EEE2AD600D0F9DC /* ZSlider.h */,
+				385544DB1EEE2AD600D0F9DC /* ZSlider.m */,
+				385544DC1EEE2AD600D0F9DC /* ZSliderView.h */,
+				385544DD1EEE2AD600D0F9DC /* ZSliderView.m */,
+				385544DE1EEE2AD600D0F9DC /* ZTouchMoveView.h */,
+				385544DF1EEE2AD600D0F9DC /* ZTouchMoveView.m */,
+			);
+			path = ZplayView;
 			sourceTree = "<group>";
 		};
 		38B475C21EE1C59C008FDBDB /* resources */ = {
@@ -271,24 +284,15 @@
 		38D209151DDD9D0E0061A591 /* ZJPlayVideo */ = {
 			isa = PBXGroup;
 			children = (
-				384189451EE99DDA00A062CE /* tu */,
+				385544D71EEE2AD600D0F9DC /* ZplayView */,
+				384189451EE99DDA00A062CE /* TestPic */,
 				38B475C21EE1C59C008FDBDB /* resources */,
 				38D209191DDD9D0E0061A591 /* AppDelegate.h */,
 				38D2091A1DDD9D0E0061A591 /* AppDelegate.m */,
-				3841893F1EE99C3C00A062CE /* ViewController.h */,
-				384189401EE99C3C00A062CE /* ViewController.m */,
-				38CCE7A01EE6DD5B00CDE74F /* testViewController.h */,
-				38CCE7A11EE6DD5B00CDE74F /* testViewController.m */,
+				38CCE7A01EE6DD5B00CDE74F /* TestViewController.h */,
+				38CCE7A11EE6DD5B00CDE74F /* TestViewController.m */,
 				38D2091C1DDD9D0E0061A591 /* PlayViewController.h */,
 				38D2091D1DDD9D0E0061A591 /* PlayViewController.m */,
-				38172D0F1EDFB9BA00903A5B /* ZPlayView.h */,
-				38172D101EDFB9BA00903A5B /* ZPlayView.m */,
-				38172D341EDFF81C00903A5B /* ZSliderView.h */,
-				38172D351EDFF81C00903A5B /* ZSliderView.m */,
-				38B475D21EE54812008FDBDB /* ZSlider.h */,
-				38B475D31EE54812008FDBDB /* ZSlider.m */,
-				38B475CF1EE4405E008FDBDB /* ZTouchMoveView.h */,
-				38B475D01EE4405E008FDBDB /* ZTouchMoveView.m */,
 				38172D2B1EDFC4B400903A5B /* IJKMediaFramework.framework */,
 				38D209221DDD9D0E0061A591 /* Assets.xcassets */,
 				38D209241DDD9D0E0061A591 /* LaunchScreen.storyboard */,
@@ -527,15 +531,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				384189411EE99C3C00A062CE /* ViewController.m in Sources */,
+				385544E21EEE2AD600D0F9DC /* ZSliderView.m in Sources */,
+				385544E01EEE2AD600D0F9DC /* ZPlayView.m in Sources */,
 				38D2091E1DDD9D0E0061A591 /* PlayViewController.m in Sources */,
-				38172D111EDFB9BA00903A5B /* ZPlayView.m in Sources */,
-				38B475D11EE4405E008FDBDB /* ZTouchMoveView.m in Sources */,
-				38172D361EDFF81C00903A5B /* ZSliderView.m in Sources */,
 				38D2091B1DDD9D0E0061A591 /* AppDelegate.m in Sources */,
-				38B475D41EE54812008FDBDB /* ZSlider.m in Sources */,
-				38CCE7A21EE6DD5B00CDE74F /* testViewController.m in Sources */,
+				38CCE7A21EE6DD5B00CDE74F /* TestViewController.m in Sources */,
+				385544E11EEE2AD600D0F9DC /* ZSlider.m in Sources */,
 				38D209181DDD9D0E0061A591 /* main.m in Sources */,
+				385544E31EEE2AD600D0F9DC /* ZTouchMoveView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,18 +1,18 @@
 //
-//  testViewController.m
+//  TestViewController.m
 //  ZJPlayVideo
 //
 //  Created by zj on 17/6/6.
 //  Copyright © 2017年 zj. All rights reserved.
 //
 
-#import "testViewController.h"
+#import "TestViewController.h"
 #import "PlayViewController.h"
-@interface testViewController ()
+@interface TestViewController ()
 
 @end
 
-@implementation testViewController
+@implementation TestViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

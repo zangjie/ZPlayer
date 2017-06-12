@@ -7,8 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "testViewController.h"
-#import "ViewController.h"
+#import "TestViewController.h"
+
 
 @interface AppDelegate ()
 
@@ -24,14 +24,9 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-//    testViewController *viewc = [[testViewController alloc]init];
-//    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:viewc];
-//    self.window.rootViewController = nav;
-//    
-
-        ViewController *viewc = [[ViewController alloc]init];
-        UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:viewc];
-        self.window.rootViewController = nav;
+    TestViewController *viewc = [[TestViewController alloc]init];
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:viewc];
+    self.window.rootViewController = nav;
     
     
     return YES;

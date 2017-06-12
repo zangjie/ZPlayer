@@ -1,5 +1,5 @@
 //
-//  testViewController.h
+//  TestViewController.h
 //  ZJPlayVideo
 //
 //  Created by zj on 17/6/6.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface testViewController : UIViewController
+@interface TestViewController : UIViewController
 
 @end
